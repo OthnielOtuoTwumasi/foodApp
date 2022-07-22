@@ -3,8 +3,13 @@ import 'dart:collection';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_refresh/routes/createdWidgets/foodCardWidget..dart';
+import 'package:flutter_refresh/model/arguments.dart';
 
 class MyController extends ChangeNotifier {
+//final controllerArgs = ModalRoute.of(context)!.settings.arguments as Arguments;
+
+ int multiplier = 0;
+
   final List<FoodCard> _foodCardList = [
     FoodCard(
       foodTitle: "Stir Fried Spaghetti",
@@ -31,5 +36,7 @@ class MyController extends ChangeNotifier {
   UnmodifiableListView<FoodCard> get unmodifiedFoodCardList {
     return UnmodifiableListView(_foodCardList);
   }
+
+
 
 }

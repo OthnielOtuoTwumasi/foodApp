@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//djvsjsjnvvn
 class FoodCard extends StatelessWidget {
   final String foodTitle;
   final String foodInfo;
@@ -23,7 +24,7 @@ class FoodCard extends StatelessWidget {
         //crossAxisAlignment: CrossAxisAlignment.start,
         //crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-           Expanded(
+          Expanded(
             child: ClipRRect(
               child: Image(
                 image: AssetImage("assets/$foodImage"),
